@@ -9,11 +9,11 @@ function NavBar() {
                 <Toolbar>
                     <Typography sx={{ flexGrow: 1 }}>TAPAS</Typography>
                     <Stack direction="row" spacing={2}>
+                        <Link href='#' color='inherit' underline="none">Menu</Link>
+                        <Link href='#' color='inherit' underline="none">Services</Link>
                         <Link href='#' color='inherit' underline="none">Our Story</Link>
                         <Link href='#' color='inherit' underline="none">Visit Us</Link>
-                        <Link href='#' color='inherit' underline="none">Menu</Link>
-                        <Link href='#' color='inherit' underline="none">Catering</Link>
-                        <Link href='#' color='inherit' underline="none">Reservations</Link>
+                        <Link href='#' color='inherit' underline="none">Careers</Link>
                     </Stack>
                 </Toolbar>
             </Container>
