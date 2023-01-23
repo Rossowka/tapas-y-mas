@@ -1,13 +1,26 @@
 import React from 'react';
 
-import { AppBar, Container, Stack, Toolbar, Typography, Link } from '@mui/material';
+import { AppBar, Container, Stack, Toolbar, Link } from '@mui/material';
+
+import Logo from './Logo';
 
 function NavBar() {
     return(
-        <AppBar>
+        <AppBar
+          sx={{
+            opacity: 0.25,
+          }}
+        >
             <Container>
                 <Toolbar>
-                    <Typography sx={{ flexGrow: 1 }}>TAPAS</Typography>
+                    <Link
+                      sx={{
+                        flexGrow: 1,
+                        color: 'inherit',
+                      }}
+                    >
+                        <Logo />
+                    </Link>
                     <Stack direction="row" spacing={2}>
                         <Link href='#' color='inherit' underline="none">Menu</Link>
                         <Link href='#' color='inherit' underline="none">Services</Link>
