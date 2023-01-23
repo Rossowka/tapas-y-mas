@@ -7,6 +7,8 @@ import {
     Typography
 } from '@mui/material';
 
+import Image from '../assets/img/hero.jpeg';
+
 function Hero() {
     const content = {
         'header-p1': 'Lorem ipsum dolor',
@@ -18,7 +20,19 @@ function Hero() {
 
 
     return(
-        <Container>
+        <Container
+          sx={{
+            height: '100vh',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundImage: `url(${Image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'black'
+          }}
+        >
             <Box>
                 <Typography variant="h2" component="h2" gutterBottom={true}>
                     <Typography color="secondary" variant="h2" component="span">{content['header-p1']} </Typography>
