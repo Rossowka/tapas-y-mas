@@ -3,6 +3,8 @@ import { Box, Typography } from "@mui/material";
 function Logo() {
 	return (
 		<Box
+            component="a"
+            href="/"
 			sx={{
 				backgroundColor: "black",
 				width: 64,
@@ -10,16 +12,14 @@ function Logo() {
 				display: "flex",
 				alignItems: "center",
 				justifyContent: "center",
+                textDecoration: "none",
+                color: "inherit",
 			}}
 		>
 			<Typography
 				variant="h6"
-				component="a"
-				href="/"
 				sx={{
 					fontFamily: "Comicool",
-					color: "inherit",
-					textDecoration: "none",
 				}}
 			>
 				q
