@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 
 import Hero from './components/Hero';
-import NavBar from './components/NavBar';
+import DrawerNavBar from './components/DrawerNavBar';
 
 function App() {
   return (
     <>
-      <NavBar />
+      <DrawerNavBar />
       <Hero />
     </>
   );

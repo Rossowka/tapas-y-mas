@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Comicool";
+  src: local("Comicool"), url("./assets/fonts/Comicool/ComicoolBookRegular-yeLe.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   font-family: 'Roboto';
