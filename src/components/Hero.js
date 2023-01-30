@@ -21,7 +21,7 @@ function Hero() {
 				display: "flex",
 				alignItems: "center",
 				justifyContent: "center",
-				background: `linear-gradient(rgba(44,44,42,0.25), rgba(44,44,42,0.25)), url(${BackgroundImage})`,
+				background: `linear-gradient(rgba(44,44,42,0.5), rgba(44,44,42,0.5)), url(${BackgroundImage})`,
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 				backgroundRepeat: "no-repeat",
@@ -36,6 +36,8 @@ function Hero() {
 						fontFamily: "Comicool",
 						color: "#fff",
 						textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
+						// fontSize: { xs: '9vw', md: 'default'},
+						textAlign: "center"
 					}}
 				>
 					{content["welcome-p1"]}
@@ -43,6 +45,7 @@ function Hero() {
 				<Box
 					sx={{
 						display: "flex",
+						whiteSpace: "nowrap",
 						alignItems: "center",
 						justifyContent: "center",
 						gap: "15px",
@@ -51,7 +54,6 @@ function Hero() {
 					{content["welcome-p2"].map((item, index) => (
 						<>
 							<Typography
-								color="inherit"
 								variant="h5"
 								component="h5"
 								key={`welcome-p2-${index}`}
@@ -69,7 +71,7 @@ function Hero() {
 									sx={{
 										height: "10px",
 										width: "10px",
-										backgroundColor: "rgba(195,65,61,1)",
+										backgroundColor: "primary.main",
 										boxShadow: "1px 1px 1px rgb(0,0,0,0.5)",
 									}}
 								/>
@@ -88,17 +90,14 @@ function Hero() {
 				>
 					<Button
 						variant="contained"
-						sx={{
-							backgroundColor: "rgba(195,65,61,1)",
-						}}
+						color="primary"
 					>
 						{content["primary-action"]}
 					</Button>
 					<Button
 						variant="outlined"
+						color="secondary"
 						sx={{
-							borderColor: "rgba(195,65,61,1)",
-							color: "rgba(195,65,61,1)",
 							textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
 							boxShadow: "1px 1px 1px rgb(0,0,0,0.5)",
 						}}

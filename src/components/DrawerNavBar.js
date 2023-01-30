@@ -38,7 +38,8 @@ function DrawerNavBar() {
 			<AppBar
 				component="nav"
 				sx={{
-					background: "rgba(0,0,0, 0.25)",
+					// background: "rgba(0,0,0, 0.25)",
+					background: "none",
 				}}
 			>
 				<Container>
@@ -50,10 +51,10 @@ function DrawerNavBar() {
 						<Logo />
 						<Stack
 							direction="row"
-							spacing={2}
 							sx={{
 								textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
 								display: { xs: "none", sm: "inherit" },
+								gap: 2
 							}}
 						>
 							<Link href="#" color="inherit" underline="none">

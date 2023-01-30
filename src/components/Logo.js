@@ -1,19 +1,20 @@
-import { Box, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 function Logo() {
 	return (
-		<Box
+		<Button
 			component="a"
 			href="/"
 			sx={{
-				backgroundColor: "rgba(195,65,61,1)",
+				backgroundColor: "primary.main",
 				width: 64,
 				height: 64,
-				display: "flex",
-				alignItems: "center",
-				justifyContent: "center",
-				textDecoration: "none",
+				borderRadius: '0',
+				textTransform: 'lowercase',
 				color: "inherit",
+				'&:hover': {
+          backgroundColor: 'primary.dark',
+        },
 			}}
 		>
 			<Typography
@@ -24,7 +25,7 @@ function Logo() {
 			>
 				q
 			</Typography>
-		</Box>
+		</Button>
 	);
 }
 
