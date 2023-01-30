@@ -28,6 +28,7 @@ function DrawerNavBar() {
 
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+			<Divider />
 			<List></List>
 		</Box>
 	);
@@ -77,7 +78,6 @@ function DrawerNavBar() {
 							onClick={handleDrawerToggle}
 							sx={{
 								display: { sm: "none" },
-								zIndex: 9999
 							}}
 						>
 							<MenuIcon />
