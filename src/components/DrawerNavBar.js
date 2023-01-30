@@ -88,7 +88,7 @@ function DrawerNavBar() {
 			<Box component="nav">
 				<Drawer
 					variant="temporary"
-					anchor='right'
+					anchor="right"
 					open={mobileOpen}
 					onClose={handleDrawerToggle}
 					ModalProps={{
@@ -96,7 +96,10 @@ function DrawerNavBar() {
 					}}
 					sx={{
 						display: { xs: "block", sm: "none" },
-						'& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+						"& .MuiDrawer-paper": {
+							boxSizing: "border-box",
+							width: drawerWidth,
+						},
 					}}
 				>
 					{drawer}

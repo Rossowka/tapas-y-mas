@@ -6,7 +6,7 @@ function Logo() {
 			component="a"
 			href="/"
 			sx={{
-				backgroundColor: "black",
+				backgroundColor: "rgba(195,65,61,1)",
 				width: 64,
 				height: 64,
 				display: "flex",

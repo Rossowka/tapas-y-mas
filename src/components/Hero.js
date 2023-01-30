@@ -1,53 +1,114 @@
-import React from 'react';
+import React from "react";
 
-import {
-    Box,
-    Button,
-    Container,
-    Typography
-} from '@mui/material';
+import { Box, Button, Container, Typography } from "@mui/material";
 
-import Image from '../assets/img/hero.jpeg';
+import BackgroundImage from "../assets/img/hero.jpeg";
 
 function Hero() {
-    const content = {
-        'header-p1': 'Lorem ipsum dolor',
-        'header-p2': 'sit amet, consectetur adipiscing elit.',
-        'description': 'Suspendisse aliquam tellus ante, porttitor mattis diam eleifend quis. Pellentesque pulvinar commodo eros sit amet finibus.',
-        'primary-action': 'Book a table',
-        'secondary-action': 'Order Now',
-    };
+	const content = {
+		"welcome-p1": "quiquiriquí",
+		"welcome-p2": ["tapas", "wine", "good time"],
+		"primary-action": "Book a table",
+		"secondary-action": "Order Now",
+	};
 
-
-    return(
-        <Container
-          sx={{
-            height: '100vh',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundImage: `url(${Image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundColor: 'black'
-          }}
-        >
-            <Box>
-                <Typography variant="h2" component="h2" gutterBottom={true}>
-                    <Typography color="secondary" variant="h2" component="span">{content['header-p1']} </Typography>
-                    <Typography variant="h2" component="span">{content['header-p2']}</Typography>
-                </Typography>
-                <Container maxWidth="sm">
-                    <Typography variant="subtitle1" color="textSecondary" paragraph={true}>{content['description']}</Typography>
-                </Container>
-                <Box mt={3}>
-                    <Button variant="contained" color="secondary">{content['primary-action']}</Button>
-                    <Button variant="outlined" color="secondary">{content['secondary-action']}</Button>
-                </Box>
-            </Box>
-        </Container>
-    )
+	return (
+		<Container
+			maxWidth={false}
+			sx={{
+				height: "100vh",
+				width: "100vw",
+				display: "flex",
+				alignItems: "center",
+				justifyContent: "center",
+				background: `linear-gradient(rgba(44,44,42,0.25), rgba(44,44,42,0.25)), url(${BackgroundImage})`,
+				backgroundSize: "cover",
+				backgroundPosition: "center",
+				backgroundRepeat: "no-repeat",
+			}}
+		>
+			<Box>
+				<Typography
+					color="inherit"
+					variant="h2"
+					component="h2"
+					sx={{
+						fontFamily: "Comicool",
+						color: "#fff",
+						textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
+					}}
+				>
+					{content["welcome-p1"]}
+				</Typography>
+				<Box
+					sx={{
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "center",
+						gap: "15px",
+					}}
+				>
+					{content["welcome-p2"].map((item, index) => (
+						<>
+							<Typography
+								color="inherit"
+								variant="h5"
+								component="h5"
+								key={`welcome-p2-${index}`}
+								sx={{
+									fontFamily: "Comicool",
+									color: "#fff",
+									textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
+									alignSelf: "center",
+								}}
+							>
+								{item}
+							</Typography>
+							{index !== content["welcome-p2"].length - 1 && (
+								<Box
+									sx={{
+										height: "10px",
+										width: "10px",
+										backgroundColor: "rgba(195,65,61,1)",
+										boxShadow: "1px 1px 1px rgb(0,0,0,0.5)",
+									}}
+								/>
+							)}
+						</>
+					))}
+				</Box>
+				<Box
+					sx={{
+						mt: 4,
+						display: "flex",
+						gap: "20px",
+						alignItems: "center",
+						justifyContent: "center",
+					}}
+				>
+					<Button
+						variant="contained"
+						sx={{
+							backgroundColor: "rgba(195,65,61,1)",
+						}}
+					>
+						{content["primary-action"]}
+					</Button>
+					<Button
+						variant="outlined"
+						sx={{
+							borderColor: "rgba(195,65,61,1)",
+							color: "rgba(195,65,61,1)",
+							textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
+							boxShadow: "1px 1px 1px rgb(0,0,0,0.5)",
+						}}
+					>
+						{content["secondary-action"]}
+					</Button>
+				</Box>
+			</Box>
+		</Container>
+	);
 }
 
 export default Hero;

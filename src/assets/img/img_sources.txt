@@ -1,4 +1,0 @@
-hero:
-    nick hillier / unsplash
-
-Image by <a href="https://www.freepik.com/free-vector/chinese-new-year-background-with-rooster-silhouette_988142.htm#query=cock&position=5&from_view=search&track=sph">Freepik</a>
