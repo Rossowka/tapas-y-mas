@@ -19,7 +19,7 @@ import Logo from "./Logo";
 
 const drawerWidth = 240;
 
-function DrawerNavBar() {
+export function NavBar() {
 	const [mobileOpen, setMobileOpen] = useState(false);
 
 	const handleDrawerToggle = () => {
@@ -109,5 +109,3 @@ function DrawerNavBar() {
 		</Box>
 	);
 }
-
-export default DrawerNavBar;

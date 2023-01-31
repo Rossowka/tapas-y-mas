@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # TEMPORARILY
-src/assets
+src/assets/colors.txt

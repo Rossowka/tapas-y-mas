@@ -2,9 +2,9 @@ import React from "react";
 
 import { Box, Button, Container, Typography } from "@mui/material";
 
-import BackgroundImage from "../assets/img/hero.jpeg";
+import BackgroundImage from "./img/hero.jpeg";
 
-function Hero() {
+export function Hero() {
 	const content = {
 		"welcome-p1": "quiquiriquí",
 		"welcome-p2": ["tapas", "wine", "good time"],
@@ -36,7 +36,6 @@ function Hero() {
 						fontFamily: "Comicool",
 						color: "#fff",
 						textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
-						// fontSize: { xs: '9vw', md: 'default'},
 						textAlign: "center"
 					}}
 				>
@@ -109,5 +108,3 @@ function Hero() {
 		</Container>
 	);
 }
-
-export default Hero;

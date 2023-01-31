@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import Hero from './components/Hero';
-import DrawerNavBar from './components/DrawerNavBar';
+import { NavBar, Hero } from './components';
 
 function App() {
   return (
     <>
-      <DrawerNavBar />
+      <NavBar />
       <Hero />
     </>
   );
