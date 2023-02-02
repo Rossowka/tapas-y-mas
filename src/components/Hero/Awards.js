@@ -1,35 +1,13 @@
 import { Avatar, Container, Stack } from "@mui/material";
-import DecanterAward from "./img/badge_Decanter.jpg";
-import EsfaAward from "./img/badge_ESFA.png";
-import RieslingAward from "./img/badge_RieslingWeeks.png";
-import TripadvisorAward from "./img/badge_Tripadvisor.png";
+import { awardsItems } from "./consts/awardsItems"
 
-const itemData = [
-	{
-		img: DecanterAward,
-		title: "Decanter Award",
-	},
-	{
-		img: EsfaAward,
-		title: "European Street Food Awards",
-	},
-	{
-		img: RieslingAward,
-		title: "Riesling Weeks Award",
-	},
-	{
-		img: TripadvisorAward,
-		title: "Tripadvisor Award",
-	},
-];
-
-export default function Awards() {
+export default function Awards({ sx }) {
 	return (
-    <Container>
+    <Container sx={sx}>
       <Container>
         <Stack direction="row" spacing={4}>
-          {itemData.map((item) => (
-            <Avatar key={item.img} src={item.img} alt={item.title} sx={{ width: 80, height: 80}}/>
+          {awardsItems.map((item) => (
+            <Avatar key={item.img} src={item.img} alt={item.title} sx={{ width: 80, height: 80, backgroundColor: "#fff"}}/>
             ))}
         </Stack>
       </Container>
