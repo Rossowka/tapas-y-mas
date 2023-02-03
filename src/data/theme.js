@@ -14,11 +14,13 @@ export let theme = responsiveFontSizes(createTheme({
 theme = createTheme(theme, {
 	typography: {
 		h2: {
+			fontFamily: "Comicool",
 			[theme.breakpoints.down('sm')]: {
 				fontSize: "9vw",
 			}
 		},
 		h5: {
+			fontFamily: "Comicool",
 			[theme.breakpoints.down('sm')]: {
 				fontSize: "3.5vw",
 			}

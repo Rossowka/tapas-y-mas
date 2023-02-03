@@ -1,6 +1,6 @@
 import { Button, Typography } from "@mui/material";
 
-function Logo() {
+export default function Logo() {
 	return (
 		<Button
 			component="a"
@@ -28,5 +28,3 @@ function Logo() {
 		</Button>
 	);
 }
-
-export default Logo;

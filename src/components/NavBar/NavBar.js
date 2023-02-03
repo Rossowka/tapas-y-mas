@@ -14,7 +14,6 @@ import {
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
-
 import Logo from "./Logo";
 
 const drawerWidth = 240;
@@ -34,7 +33,7 @@ export function NavBar() {
 	);
 
 	return (
-		<Box>
+		<>
 			<AppBar
 				component="nav"
 				sx={{
@@ -106,6 +105,6 @@ export function NavBar() {
 					{drawer}
 				</Drawer>
 			</Box>
-		</Box>
+		</>
 	);
 }
