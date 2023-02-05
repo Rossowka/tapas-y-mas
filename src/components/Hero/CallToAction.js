@@ -4,7 +4,7 @@ export default function CallToAction({ heroContent }) {
   return (
     <Box
       sx={{
-        mt: 4,
+        mt: 5,
         display: "flex",
         gap: "20px",
         alignItems: "center",
