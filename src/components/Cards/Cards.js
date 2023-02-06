@@ -8,7 +8,7 @@ export function Cards() {
 			sx={{
 				display: "flex",
 				justifyContent: "center",
-				gap: 4,
+				gap: 5,
 				flexDirection: { xs: "column", sm: "row" },
 			}}
 		>
