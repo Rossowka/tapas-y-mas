@@ -41,7 +41,7 @@ export function Hero() {
 							textAlign: "center",
 							color: "#fff",
 							textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
-							flexBasis: "65%",
+							flexBasis: "60%",
 							justifyContent: "end",
 						},
 					]}

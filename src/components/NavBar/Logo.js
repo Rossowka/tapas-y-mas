@@ -9,12 +9,12 @@ export default function Logo() {
 				backgroundColor: "primary.main",
 				width: 64,
 				height: 64,
-				borderRadius: '0',
-				textTransform: 'lowercase',
+				borderRadius: "0",
+				textTransform: "lowercase",
 				color: "inherit",
-				'&:hover': {
-          backgroundColor: 'primary.dark',
-        },
+				"&:hover": {
+					backgroundColor: "primary.dark",
+				},
 			}}
 		>
 			<Typography

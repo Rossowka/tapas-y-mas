@@ -6,7 +6,7 @@ export default function CallToAction({ heroContent }) {
       sx={{
         mt: 5,
         display: "flex",
-        gap: "20px",
+        gap: 5,
         alignItems: "center",
         justifyContent: "center",
       }}

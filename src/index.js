@@ -9,13 +9,14 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import './assets/fonts/Comicool/ComicoolBookRegular-yeLe.ttf';
-import { ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./data/theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
+			<CssBaseline />
 			<App />
 		</ThemeProvider>
 	</React.StrictMode>

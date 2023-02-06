@@ -8,6 +8,9 @@ export let theme = responsiveFontSizes(createTheme({
 		secondary: {
 			main: "rgb(24,242,178)",
 		},
+		background: {
+			default: "rgb(49, 49, 49)"
+		}
 	},
 }));
 

@@ -1,15 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import { NavBar, Hero } from './components';
+import { NavBar, Hero, Cards } from "./components";
 
 function App() {
-  return (
-    <>
-      <NavBar />
-      <Hero />
-    </>
-  );
+	return (
+		<>
+			<NavBar />
+			<Hero />
+			<Cards />
+		</>
+	);
 }
 
 export default App;
