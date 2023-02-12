@@ -1,110 +1,58 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import {
-	AppBar,
-	Container,
-	Stack,
-	Toolbar,
-	Link,
-	Box,
-	Divider,
-	List,
-	IconButton,
-	Drawer,
-} from "@mui/material";
+import { AppBar, Container, Toolbar, IconButton } from '@mui/material';
 
-import MenuIcon from "@mui/icons-material/Menu";
-import Logo from "./Logo";
-
-const drawerWidth = 240;
+import MenuIcon from '@mui/icons-material/Menu';
+import Logo from './Logo';
+import { LinkList } from './LinkList';
+import { SideMenu } from './SideMenu';
 
 export function NavBar() {
-	const [mobileOpen, setMobileOpen] = useState(false);
+	const [toggleMenu, setToggleMenu] = useState(false);
 
 	const handleDrawerToggle = () => {
-		setMobileOpen((prevState) => !prevState);
+		setToggleMenu((prevState) => !prevState);
 	};
-
-	const drawer = (
-		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-			<Divider />
-			<List></List>
-		</Box>
-	);
 
 	return (
 		<>
 			<AppBar
-				component="nav"
+				component='nav'
 				sx={{
-					// background: "rgba(0,0,0, 0.25)",
-					background: "none",
+					background: 'none',
+					boxShadow: 'none',
 				}}
 			>
 				<Container>
 					<Toolbar
 						sx={{
-							justifyContent: "space-between",
+							justifyContent: 'space-between',
+							textShadow: '1px 1px 1px rgb(0,0,0,0.5)',
 						}}
 					>
 						<Logo />
-						<Stack
-							direction="row"
-							sx={{
-								textShadow: "1px 1px 1px rgb(0,0,0,0.5)",
-								display: { xs: "none", sm: "inherit" },
-								gap: 2
-							}}
-						>
-							<Link href="#" color="inherit" underline="none">
-								Menu
-							</Link>
-							<Link href="#" color="inherit" underline="none">
-								Services
-							</Link>
-							<Link href="#" color="inherit" underline="none">
-								Our Story
-							</Link>
-							<Link href="#" color="inherit" underline="none">
-								Visit Us
-							</Link>
-							<Link href="#" color="inherit" underline="none">
-								Careers
-							</Link>
-						</Stack>
+						<LinkList
+							direction='row'
+							sx={{ display: { xs: 'none', sm: 'inherit' } }}
+						/>
 						<IconButton
-							color="inherit"
-							aria-label="open drawer"
+							color='inherit'
+							aria-label='open drawer'
 							onClick={handleDrawerToggle}
 							sx={{
-								display: { sm: "none" },
+								display: { sm: 'none' },
+								transition: '0.5s ease',
 							}}
 						>
-							<MenuIcon />
+							{!toggleMenu && <MenuIcon />}
 						</IconButton>
 					</Toolbar>
 				</Container>
 			</AppBar>
-			<Box component="nav">
-				<Drawer
-					variant="temporary"
-					anchor="right"
-					open={mobileOpen}
-					onClose={handleDrawerToggle}
-					ModalProps={{
-						keepMounted: true, // Better open performance on mobile.
-					}}
-					sx={{
-						display: { xs: "block", sm: "none" },
-						"& .MuiDrawer-paper": {
-							boxSizing: "border-box",
-							width: drawerWidth,
-						},
-					}}
-				>
-					{drawer}
-				</Drawer>
-			</Box>
+			<SideMenu
+				handleDrawerToggle={handleDrawerToggle}
+				toggleMenu={toggleMenu}
+			/>
 		</>
 	);
 }
