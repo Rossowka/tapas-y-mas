@@ -1,3 +1,3 @@
-export { NavBar } from "./NavBar";
-export { Hero } from "./Hero";
-export { Cards } from "./Cards";
+export { NavBar } from './NavBar';
+export { HeroImage, Slogan, CallToAction } from './Hero';
+export { Cards } from './Cards';

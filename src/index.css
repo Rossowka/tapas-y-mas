@@ -3,7 +3,13 @@
   src: local("Comicool"), url("./assets/fonts/Comicool/ComicoolBookRegular-yeLe.ttf") format("truetype");
 }
 
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Roboto';
 }

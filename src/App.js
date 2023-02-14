@@ -1,14 +1,28 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
-import { NavBar, Hero, Cards } from "./components";
+import { NavBar } from './components';
+import {
+	AboutUs,
+	Footer,
+	Header,
+	Recognition,
+	SocialMediaFeed,
+	SpecialMenu,
+	VisitUs,
+} from './containers';
 
 function App() {
 	return (
 		<>
 			<NavBar />
-			<Hero />
-			<Cards />
+			<Header />
+			<AboutUs />
+			<SpecialMenu />
+			<Recognition />
+			<VisitUs />
+			<SocialMediaFeed />
+			<Footer />
 		</>
 	);
 }

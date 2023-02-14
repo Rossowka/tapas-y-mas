@@ -12,6 +12,9 @@ export let theme = responsiveFontSizes(
 			background: {
 				default: 'rgb(49, 49, 49)',
 			},
+			black: {
+				main: 'rgb(12, 12, 12)',
+			},
 		},
 	})
 );
@@ -37,6 +40,7 @@ theme = createTheme(theme, {
 				root: {
 					'&:hover': {
 						borderBottom: `1px solid ${theme.palette.primary.main}`,
+						transition: '0.5s ease',
 					},
 				},
 			},
