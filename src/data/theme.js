@@ -16,6 +16,11 @@ export let theme = responsiveFontSizes(
 				main: 'rgb(12, 12, 12)',
 			},
 		},
+		typography: {
+			allVariants: {
+				color: '#fff',
+			},
+		},
 	})
 );
 
