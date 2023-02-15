@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Box, Container, Typography } from '@mui/material';
-import { heroContent } from '../../constants';
+import { images, heroContent } from '../../constants';
 import { CallToAction, HeroImage, Slogan } from '../../components/Hero';
 
 export function Header() {
@@ -20,7 +20,7 @@ export function Header() {
 				},
 			]}
 		>
-			<HeroImage image={heroContent.image} />
+			<HeroImage image={images.bgImage} />
 			<Container
 				sx={[
 					flexCenter,
@@ -35,7 +35,6 @@ export function Header() {
 						flexCenter,
 						{
 							textAlign: 'center',
-							color: '#fff',
 							textShadow: '1px 1px 1px rgb(0,0,0,0.5)',
 							flexBasis: '60%',
 							justifyContent: 'end',
@@ -44,7 +43,6 @@ export function Header() {
 					]}
 				>
 					<Typography
-						color='inherit'
 						variant='h2'
 						component='h2'
 						sx={{ letterSpacing: '0.04em' }}
