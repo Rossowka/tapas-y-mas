@@ -10,16 +10,31 @@ export function AboutUs() {
 		justifyContent: 'center',
 	};
 	return (
-		<Container sx={[flexCenter, { position: 'relative' }]}>
+		<Container sx={[flexCenter, { position: 'relative', my: 5 }]}>
 			<Container sx={[flexCenter, { position: 'absolute', inset: 0 }]}>
 				<Box
 					component='img'
-					sx={{ height: '50vh', zIndex: 0 }}
+					sx={{
+						maxHeight: '50vh',
+						maxWidth: '100%',
+						zIndex: 0,
+					}}
 					src={images.q}
 					alt='q letter'
 				/>
 			</Container>
-			<Container sx={[flexCenter, { zIndex: 10 }]}>
+			<Container
+				sx={[
+					flexCenter,
+					{
+						zIndex: 10,
+						flexDirection: 'row',
+						maxWidth: '100%',
+						flexWrap: 'wrap',
+						justifyContent: { xs: 'center', sm: 'space-between', md: 'center' },
+					},
+				]}
+			>
 				<Box
 					sx={{
 						flex: 1,
@@ -28,6 +43,9 @@ export function AboutUs() {
 						alignItems: 'flex-end',
 						flexDirection: 'column',
 						textAlign: 'right',
+						minWidth: '205px',
+						maxWidth: '305px',
+						my: { xs: 10, sm: 0 },
 					}}
 				>
 					<Typography
@@ -57,7 +75,12 @@ export function AboutUs() {
 				</Box>
 				<Box
 					component='img'
-					sx={{ height: '80vh', my: 2, mx: 4 }}
+					sx={{
+						maxHeight: '90vh',
+						maxWidth: { xs: '100%', sm: '50%' },
+						my: { xs: 5, sm: 2 },
+						mx: { xs: 2, md: 5 },
+					}}
 					src={images.platter}
 					alt='platter'
 				/>
@@ -69,6 +92,9 @@ export function AboutUs() {
 						alignItems: 'flex-start',
 						flexDirection: 'column',
 						textAlign: 'left',
+						minWidth: '205px',
+						maxWidth: '305px',
+						my: { xs: 10, sm: 0 },
 					}}
 				>
 					<Typography
