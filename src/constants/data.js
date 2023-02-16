@@ -53,3 +53,64 @@ export const cardItems = [
 		positionRight: -10,
 	},
 ];
+
+export const wineSpecial = [
+	{
+		name: 'wine1',
+		price: 56,
+		origin: 'AU',
+		volume: '750ml',
+	},
+	{
+		name: 'wine2',
+		price: 56,
+		origin: 'AU',
+		volume: '750ml',
+	},
+	{
+		name: 'wine3',
+		price: 56,
+		origin: 'AU',
+		volume: '750ml',
+	},
+	{
+		name: 'wine4',
+		price: 56,
+		origin: 'AU',
+		volume: '750ml',
+	},
+	{
+		name: 'wine5',
+		price: 56,
+		origin: 'AU',
+		volume: '750ml',
+	},
+];
+
+export const mealSpecial = [
+	{
+		name: 'meal1',
+		price: 26,
+		ingredients: ['ing1', 'ing2', 'ing3'],
+	},
+	{
+		name: 'meal2',
+		price: 26,
+		ingredients: ['ing1', 'ing2', 'ing3'],
+	},
+	{
+		name: 'meal3',
+		price: 26,
+		ingredients: ['ing1', 'ing2', 'ing3'],
+	},
+	{
+		name: 'meal4',
+		price: 26,
+		ingredients: ['ing1', 'ing2', 'ing3'],
+	},
+	{
+		name: 'meal5',
+		price: 26,
+		ingredients: ['ing1', 'ing2', 'ing3'],
+	},
+];

@@ -7,6 +7,7 @@ import mainCard from '../assets/img/mainCard.png';
 import wineCard from '../assets/img/wineCard.png';
 import q from '../assets/img/q.png';
 import platter from '../assets/img/platter.png';
+import decanter from '../assets/img/decanter.png';
 
 export const images = {
 	bgImage,
@@ -18,4 +19,5 @@ export const images = {
 	wineCard,
 	q,
 	platter,
+	decanter,
 };
