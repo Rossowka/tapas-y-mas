@@ -22,6 +22,7 @@ export default function Slogan({ heroContent }) {
 						sx={{
 							color: '#fff',
 							lineHeight: '120px',
+							fontSize: { xs: '3.5vw', sm: '1.5rem' },
 						}}
 					>
 						{item}

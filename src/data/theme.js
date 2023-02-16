@@ -34,9 +34,6 @@ theme = createTheme(theme, {
 		},
 		h5: {
 			fontFamily: 'Comicool',
-			[theme.breakpoints.down('sm')]: {
-				fontSize: '3.5vw',
-			},
 		},
 	},
 	components: {
