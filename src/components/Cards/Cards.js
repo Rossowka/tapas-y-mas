@@ -10,7 +10,7 @@ export function Cards() {
 				justifyContent: 'space-around',
 				gap: 5,
 				flexDirection: { xs: 'column', sm: 'row' },
-				my: 5,
+				my: 10,
 			}}
 		>
 			{cardItems.map((item, index) => (
