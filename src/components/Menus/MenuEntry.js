@@ -13,14 +13,15 @@ export function MenuEntry({ item, index }) {
 						display: 'flex',
 						justifyContent: 'space-between',
 						alignItems: 'center',
+						gap: 2,
 					}}
 				>
-					<Typography sx={{ textTransform: 'uppercase' }}>
+					<Typography sx={{ textTransform: 'uppercase', flex: 1 }}>
 						{item.name}
 					</Typography>
 					<Box
 						sx={{
-							width: '90px',
+							width: '50px',
 							height: '1px',
 							background: 'white',
 						}}

@@ -56,61 +56,58 @@ export const cardItems = [
 
 export const wineSpecial = [
 	{
-		name: 'wine1',
-		price: 56,
-		origin: 'AU',
-		volume: '750ml',
+		name: 'Sangria',
+		price: 10,
+		tags: ['red or white | Rioja or Valdepeñas'],
 	},
 	{
-		name: 'wine2',
-		price: 56,
-		origin: 'AU',
-		volume: '750ml',
+		name: 'Marina Alta aus Alicante',
+		price: 20,
+		tags: ['white | Moscatel de Alejandria'],
 	},
 	{
-		name: 'wine3',
-		price: 56,
-		origin: 'AU',
-		volume: '750ml',
+		name: 'Añada Roble',
+		price: 22,
+		tags: [' red | Manto Negro, Callet, Tempranillo'],
 	},
 	{
-		name: 'wine4',
-		price: 56,
-		origin: 'AU',
-		volume: '750ml',
+		name: 'Maciá Batle Añada',
+		price: 23,
+		tags: ['red | Mantonegro, Cabernet Sauvignon, Merlot'],
 	},
 	{
-		name: 'wine5',
-		price: 56,
-		origin: 'AU',
-		volume: '750ml',
+		name: 'Binigrau Rosat',
+		price: 26,
+		tags: ['rosé | Manto Negro, Merlot'],
 	},
 ];
 
 export const mealSpecial = [
 	{
-		name: 'meal1',
-		price: 26,
-		ingredients: ['ing1', 'ing2', 'ing3'],
+		name: 'Tabla de quesos de Mahón',
+		price: 12,
+		tags: ['Platter of cheese specialties from Mahón, Menorca'],
 	},
 	{
-		name: 'meal2',
-		price: 26,
-		ingredients: ['ing1', 'ing2', 'ing3'],
+		name: 'Tabla de ibéricos',
+		price: 14,
+		tags: ['Platter of cured meats and ham'],
 	},
 	{
-		name: 'meal3',
-		price: 26,
-		ingredients: ['ing1', 'ing2', 'ing3'],
+		name: 'Flambi Carne',
+		price: 22,
+		tags: [
+			'Beef skewers with onion, bacon, peppers. Served with potatoes and pisto',
+		],
 	},
 	{
-		name: 'meal4',
-		price: 26,
-		ingredients: ['ing1', 'ing2', 'ing3'],
+		name: 'Paella Mixta',
+		price: 34,
+		tags: ['with meat, fish and seafood'],
 	},
 	{
-		name: 'meal5',
-		price: 26,
-		ingredients: ['ing1', 'ing2', 'ing3'],
+		name: 'Tapas Variation',
+		price: 40,
+		tags: ['6 choices of tapas from the card'],
 	},
 ];

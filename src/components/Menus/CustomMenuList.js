@@ -9,7 +9,17 @@ export function CustomMenuList({ title, data }) {
 	};
 
 	return (
-		<Container sx={[flexCenter, { flexDirection: 'column', zIndex: 10 }]}>
+		<Container
+			sx={[
+				flexCenter,
+				{
+					flexDirection: 'column',
+					zIndex: 10,
+					flex: 1,
+					alignSelf: 'flex-start',
+				},
+			]}
+		>
 			<Typography
 				sx={{
 					fontFamily: 'Comicool',

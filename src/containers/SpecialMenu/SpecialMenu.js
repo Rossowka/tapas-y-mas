@@ -18,7 +18,7 @@ export function SpecialMenu() {
 					sx={{
 						textTransform: 'capitalize',
 						fontFamily: 'Comicool',
-						lineHeight: 5,
+						lineHeight: { xs: 2, sm: 5 },
 						letterSpacing: '0.25em',
 					}}
 				>
@@ -35,7 +35,7 @@ export function SpecialMenu() {
 				component='h5'
 				color='primary'
 				sx={{
-					letterSpacing: '0.5rem',
+					letterSpacing: { xs: '0.25rem', sm: '0.5rem' },
 					textTransform: 'uppercase',
 					mt: 10,
 					textAlign: 'center',
@@ -50,9 +50,10 @@ export function SpecialMenu() {
 				sx={[
 					flexCenter,
 					{
-						gap: 40,
-						flexDirection: { xs: 'column', sm: 'row' },
+						gap: { xs: 10, md: 2, lg: 0 },
+						flexDirection: { xs: 'column', md: 'row' },
 						position: 'relative',
+						width: '100%',
 					},
 				]}
 			>
@@ -64,9 +65,9 @@ export function SpecialMenu() {
 					component='img'
 					sx={{
 						maxHeight: '50vh',
-						maxWidth: '100%',
+						maxWidth: { xs: '100%', md: '30%' },
 						zIndex: 5,
-						position: 'absolute',
+						// order: { xs: 0, md: 1, lg: 0 },
 					}}
 					src={images.decanter}
 					alt='menu image - decanter'
