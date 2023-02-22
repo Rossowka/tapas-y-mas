@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
 
 import { NavBar } from './components';
 import {
 	AboutUs,
 	Footer,
 	Header,
+	NotFound,
 	Recognition,
-	SocialMediaFeed,
 	SpecialMenu,
 	VisitUs,
 } from './containers';
@@ -16,12 +16,32 @@ function App() {
 	return (
 		<>
 			<NavBar />
-			<Header />
-			<AboutUs />
-			<SpecialMenu />
-			<Recognition />
-			<VisitUs />
-			<SocialMediaFeed />
+			<Routes>
+				<Route
+					path='/'
+					element={<Header />}
+				/>
+				<Route
+					path='/about'
+					element={<AboutUs />}
+				/>
+				<Route
+					path='/menu'
+					element={<SpecialMenu />}
+				/>
+				<Route
+					path='/recognition'
+					element={<Recognition />}
+				/>
+				<Route
+					path='/location'
+					element={<VisitUs />}
+				/>
+				<Route
+					path='*'
+					element={<NotFound />}
+				/>
+			</Routes>
 			<Footer />
 		</>
 	);

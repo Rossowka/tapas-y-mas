@@ -1,4 +1,5 @@
 import { Link, Stack } from '@mui/material';
+import { NavLink as RouterLink } from 'react-router-dom';
 
 export function LinkList({ direction, sx }) {
 	return (
@@ -9,40 +10,44 @@ export function LinkList({ direction, sx }) {
 					sx,
 					{
 						gap: 2,
-						// flex: 1,
 					},
 				]}
 			>
 				<Link
-					href='/'
+					component={RouterLink}
+					to='/'
 					color='inherit'
 					underline='none'
 				>
 					Home
 				</Link>
 				<Link
-					href='#about'
+					component={RouterLink}
+					to='/about'
 					color='inherit'
 					underline='none'
 				>
 					Our Story
 				</Link>
 				<Link
-					href='#menu'
+					component={RouterLink}
+					to='/menu'
 					color='inherit'
 					underline='none'
 				>
 					Menu
 				</Link>
 				<Link
-					href='#awards'
+					component={RouterLink}
+					to='/recognition'
 					color='inherit'
 					underline='none'
 				>
 					Recognition
 				</Link>
 				<Link
-					href='/location'
+					component={RouterLink}
+					to='/location'
 					color='inherit'
 					underline='none'
 				>
