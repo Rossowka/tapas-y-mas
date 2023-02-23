@@ -5,3 +5,5 @@ export { SocialMediaFeed } from './SocialMediaFeed';
 export { SpecialMenu } from './SpecialMenu';
 export { Recognition } from './Recognition';
 export { VisitUs } from './VisitUs';
+export { Video } from './Video';
+export { NotFound } from './NotFound';

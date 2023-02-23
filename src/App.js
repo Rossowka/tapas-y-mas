@@ -10,6 +10,7 @@ import {
 	Recognition,
 	SpecialMenu,
 	VisitUs,
+	Video,
 } from './containers';
 
 function App() {
@@ -19,15 +20,15 @@ function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Header />}
-				/>
-				<Route
-					path='/about'
-					element={<AboutUs />}
-				/>
-				<Route
-					path='/menu'
-					element={<SpecialMenu />}
+					element={
+						<>
+							<Header />
+							<AboutUs />
+							<SpecialMenu />
+							<Video />
+							<Recognition />
+						</>
+					}
 				/>
 				<Route
 					path='/recognition'
