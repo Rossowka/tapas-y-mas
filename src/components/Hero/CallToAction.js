@@ -19,10 +19,7 @@ export default function CallToAction({ heroContent }) {
 			<Button
 				variant='outlined'
 				color='secondary'
-				sx={{
-					textShadow: '1px 1px 1px rgb(0,0,0,0.5)',
-					boxShadow: '1px 1px 1px rgb(0,0,0,0.5)',
-				}}
+				sx={{ backdropFilter: 'contrast(10%)' }}
 			>
 				{heroContent['secondary-action']}
 			</Button>

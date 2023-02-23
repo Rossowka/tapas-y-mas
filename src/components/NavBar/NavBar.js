@@ -19,8 +19,10 @@ export function NavBar() {
 			<AppBar
 				component='nav'
 				sx={{
-					background: 'none',
-					boxShadow: 'none',
+					backgroundColor: 'rgb(12, 12, 12, 0.5)',
+					backdropFilter: 'blur(2px)',
+					// background: 'none',
+					// boxShadow: 'none',
 				}}
 			>
 				<Container>

@@ -34,6 +34,7 @@ export function CustomMenuList({ title, data }) {
 					<MenuEntry
 						item={item}
 						index={index}
+						key={index + item}
 					/>
 				))}
 			</Box>
