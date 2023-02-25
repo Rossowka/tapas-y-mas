@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import { Container } from '@mui/system';
+import { createRef } from 'react';
 import { images, aboutContent } from '../../constants';
 
 export function AboutUs() {
@@ -9,13 +10,18 @@ export function AboutUs() {
 		alignItems: 'center',
 		justifyContent: 'center',
 	};
+	const aboutSectionRef = createRef();
 	return (
-		<Container sx={[flexCenter, { position: 'relative', my: 5 }]}>
+		<Container
+			id='about'
+			sx={[flexCenter, { position: 'relative', my: 10 }]}
+			ref={aboutSectionRef}
+		>
 			<Container sx={[flexCenter, { position: 'absolute', inset: 0 }]}>
 				<Box
 					component='img'
 					sx={{
-						maxHeight: '50vh',
+						maxHeight: '50%',
 						maxWidth: '100%',
 						zIndex: 0,
 					}}
@@ -52,13 +58,20 @@ export function AboutUs() {
 						variant='h5'
 						component='h5'
 						color='primary'
-						sx={{ letterSpacing: '0.04em', textTransform: 'uppercase' }}
+						sx={{
+							letterSpacing: '0.25em',
+							textTransform: 'uppercase',
+							fontFamily: 'Comicool',
+							fontWeight: 600,
+						}}
 					>
 						{aboutContent['left-heading']}
 					</Typography>
-					<img
+					<Box
+						component='img'
 						src={images.olives}
 						alt='olives'
+						sx={{ m: 1 }}
 					/>
 					<Typography
 						color={grey[200]}
@@ -101,13 +114,20 @@ export function AboutUs() {
 						color='primary'
 						variant='h5'
 						component='h5'
-						sx={{ letterSpacing: '0.04em', textTransform: 'uppercase' }}
+						sx={{
+							letterSpacing: '0.25em',
+							textTransform: 'uppercase',
+							fontFamily: 'Comicool',
+							fontWeight: 600,
+						}}
 					>
 						{aboutContent['right-heading']}
 					</Typography>
-					<img
+					<Box
+						component='img'
 						src={images.olives}
 						alt='olives'
+						sx={{ m: 1 }}
 					/>
 					<Typography
 						color={grey[200]}

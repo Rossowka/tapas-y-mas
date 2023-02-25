@@ -25,3 +25,5 @@ yarn-error.log*
 # TEMPORARILY
 src/assets/colors.txt
 src/assets/img/img-sources.txt
+src/components/Cards/img/mainCard.pdf
+src/components/Cards/img/wineCard.pdf

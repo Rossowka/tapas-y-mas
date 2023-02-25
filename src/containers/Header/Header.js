@@ -13,6 +13,7 @@ export function Header() {
 
 	return (
 		<Box
+			id='home'
 			sx={[
 				flexCenter,
 				{

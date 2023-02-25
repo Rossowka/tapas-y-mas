@@ -1,7 +1,6 @@
 import { Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import { Cards } from '../../components';
-import { CustomMenuList } from '../../components/Menus/CustomMenuList';
+import { Cards, CustomMenuList } from '../../components';
 
 import { images, wineSpecial, mealSpecial } from '../../constants';
 
@@ -12,7 +11,10 @@ export function SpecialMenu() {
 		justifyContent: 'center',
 	};
 	return (
-		<Container sx={{ my: 5 }}>
+		<Container
+			id='menu'
+			sx={{ my: 5 }}
+		>
 			<Box sx={{ textAlign: 'center' }}>
 				<Typography
 					sx={{
@@ -67,7 +69,6 @@ export function SpecialMenu() {
 						maxHeight: '50vh',
 						maxWidth: { xs: '100%', md: '30%' },
 						zIndex: 5,
-						// order: { xs: 0, md: 1, lg: 0 },
 					}}
 					src={images.decanter}
 					alt='menu image - decanter'
